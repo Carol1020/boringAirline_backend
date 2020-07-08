@@ -198,3 +198,12 @@ Processing by AirplanesController#index as HTML
 Completed 200 OK in 93ms (Views: 83.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2020-07-08 15:02:09 +1000
+  [1m[35m (49.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/carol/.rvm/gems/ruby-2.7.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by AirplanesController#index as HTML
+  Rendering airplanes/index.html.erb within layouts/application
+  Rendered airplanes/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 883ms (Views: 850.6ms | ActiveRecord: 0.0ms)
+
+
