@@ -48,7 +48,4 @@ ActiveRecord::Schema.define(version: 2020_07_08_054120) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users_flights", force: :cascade do |t|
-  end
-
 end
