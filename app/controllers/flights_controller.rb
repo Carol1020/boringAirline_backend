@@ -7,4 +7,8 @@ class FlightsController < ApplicationController
   def new
     @flight = Flight.new
   end
+
+  def search
+    render :json =>
+  end
 end
