@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :users, :only => [:index, :new, :create]
   resources :reservations, :only => [:index, :new, :create]
 
-  get "/search/:from/:to" => "flights#search"
+  get "/search/:origin/:destination" => "flights#search"
 end

@@ -9,7 +9,8 @@ class FlightsController < ApplicationController
   end
 
   def search
-    @searches =[Flight.where("from=#{params[:origin]}")]
+    @searches = Flight.where(origin: params[:origin]).where(destination: params[:destination])#, Flight.where("destination = #{params[:destination]}")]
     render :json => @searches
   end
 end
+  
