@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :flights, :only => [:index, :new]
   resources :users, :only => [:index, :new, :create]
   resources :reservations, :only => [:index, :new, :create]
+
+  get "/search/:from/:to" => "flights#search"
 end
